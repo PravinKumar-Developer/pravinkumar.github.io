@@ -78,11 +78,26 @@ body {
     border-radius: 30px;
 }
 
-/* BADGES */
-.badge-custom {
-    margin: 3px;
-    padding: 6px 10px;
-    border-radius: 10px;
+.card-custom {
+border: none;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+transition: all 0.3s ease;
+background: #fff;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.section {
+padding: 70px 0;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 600;
 }
 
 /* FOOTER */
@@ -142,9 +157,39 @@ footer {
 <h2 class="section-title">About Me</h2>
 <div class="card card-custom p-4">
 <p>
-Software Engineer with 4+ years of experience in .NET Core, Web API, and SQL Server.
-Worked on IoT systems, OCR automation, and Azure cloud integrations.
-Strong in debugging, performance optimization, and scalable application design.
+    Full Stack .NET Developer with 4+ years of experience in designing and developing
+    scalable web and desktop applications using .NET Core, ASP.NET MVC, and Web API.
+    I focus on building secure, high-performance solutions using clean architecture principles.
+</p>
+
+<p>
+    I have hands-on experience across the full development lifecycle, working on both
+    frontend and backend technologies to deliver complete end-to-end solutions.
+</p>
+
+<p>
+    <strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript, and jQuery — building responsive,
+    user-friendly, and modern UI interfaces.
+</p>
+
+<p>
+    <strong>Backend:</strong> C#, ASP.NET, .NET Core, Web API, and SQL Server — developing
+    efficient business logic, API integrations, and optimized database solutions.
+</p>
+
+<p>
+    <strong>Additional Experience:</strong> Windows application development, IoT-based systems,
+    OCR automation, and Azure cloud integration.
+</p>
+
+<p>
+    Currently working with CI/CD pipelines using Jenkins, version control systems like Git and Bitbucket,
+    and following Agile methodologies for continuous delivery and team collaboration.
+</p>
+
+<p>
+    I am passionate about full-stack development, continuous learning, and building software
+    solutions that create real business impact.
 </p>
 </div>
 </section>
@@ -152,29 +197,29 @@ Strong in debugging, performance optimization, and scalable application design.
 <!-- SKILLS -->
 <section id="skills" class="section bg-light">
 <div class="container">
-<h2 class="section-title">Skills</h2>
+<h2 class="section-title">Technical Skills</h2>
 
-<div class="row">
+<div class="row g-4">
 
 <div class="col-md-6">
 <div class="card card-custom p-4">
 <h5>Technologies</h5>
-<span class="badge bg-primary badge-custom">.NET Core</span>
-<span class="badge bg-primary badge-custom">Web API</span>
-<span class="badge bg-primary badge-custom">Blazor</span>
-<span class="badge bg-success badge-custom">SQL Server</span>
-<span class="badge bg-success badge-custom">MongoDB</span>
-<span class="badge bg-info badge-custom">Azure</span>
+<p>
+C#, .NET Core, ASP.NET MVC, Web API, Blazor <br>
+HTML, CSS, JavaScript, jQuery, Bootstrap <br>
+SQL Server, MongoDB
+</p>
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="card card-custom p-4">
-<h5>Tools</h5>
-<span class="badge bg-dark badge-custom">Git</span>
-<span class="badge bg-dark badge-custom">Postman</span>
-<span class="badge bg-dark badge-custom">Jenkins</span>
-<span class="badge bg-dark badge-custom">Azure DevOps</span>
+<h5>Tools & Platforms</h5>
+<p>
+Visual Studio, VS Code, Postman <br>
+Git, GitHub, Bitbucket <br>
+Jenkins, Azure DevOps
+</p>
 </div>
 </div>
 
@@ -186,26 +231,39 @@ Strong in debugging, performance optimization, and scalable application design.
 <section id="experience" class="section container">
 <h2 class="section-title">Experience</h2>
 
-<div class="card card-custom p-4 mb-3">
-<h5>Senior Software Engineer</h5>
-<p>Novac Technology Solutions</p>
-<ul>
-<li>Built OCR-based invoice automation system</li>
-<li>Developed bulk upload and validation modules</li>
-<li>Integrated APIs using clean architecture</li>
-</ul>
-</div>
+<div class="row g-4">
 
-<div class="card card-custom p-4">
-<h5>Software Engineer</h5>
-<p>Nestotus Pvt Ltd</p>
-<ul>
-<li>Developed IoT applications using Azure IoT Hub</li>
-<li>Real-time tracking and telemetry systems</li>
-<li>Device communication and configuration tools</li>
-</ul>
-</div>
+    <div class="col-md-6">
+        <div class="card card-custom p-4 h-100">
+    <h5>Senior Software Engineer</h5>
+    <hr>
 
+    <p class="text-muted">Novac Technology Solutions</p>
+    <p class="text-muted">June 2025 – Present</p>
+
+    <ul>
+        <li>Built OCR-based invoice automation system</li>
+        <li>Developed bulk upload and validation modules</li>
+        <li>Integrated APIs using clean architecture</li>
+    </ul>
+</div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card card-custom p-4 h-100">
+            <h5>Software Engineer</h5>
+            <p class="text-muted">Nestotus Pvt Ltd</p>
+            <p class="text-muted">Feb 2022 – May 2025</p>
+
+            <ul>
+                <li>Developed IoT apps using Azure IoT Hub</li>
+                <li>Real-time tracking & telemetry systems</li>
+                <li>Device communication & configuration tools</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
 </section>
 
 <!-- PROJECTS -->
@@ -244,7 +302,7 @@ Strong in debugging, performance optimization, and scalable application design.
 <a href="https://www.linkedin.com/in/pravinkumar47" target="_blank">Profile</a>
 </p>
 <p><strong>GitHub:</strong> 
-<a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+<a href="https://github.com/PravinKumar-Developer" target="_blank">github.com/PravinKumar-Developer</a>
 </p>
 </div>
 
